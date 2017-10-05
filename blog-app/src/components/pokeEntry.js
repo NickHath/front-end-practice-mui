@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
-
+import AppBar from 'material-ui/AppBar';
 
 class PokeEntry extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         
     this.state = {
-        name: "Bulbasaur",
-        id: 2,
-        description: "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKeMON."
+        name: props.name,
+        id: props.id,
+        description: props.description
         }
     }
+
+    render() {
+      console.log(this.state);
+      return(
+        <div className="entry">
+          <AppBar title={this.state.name} 
+                  iconClassNameRight="muidocs-icon-navigation-expand-more"/>
+        </div>
+      )
+    }
 }
-// "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKMON."
-// "Bulbasaur"
-// "2"
 
 export default PokeEntry;
