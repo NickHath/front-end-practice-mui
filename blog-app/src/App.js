@@ -9,7 +9,13 @@ import Pokedex from './components/pokedex';
 
 const App = () => (
   <MuiThemeProvider>
+  <div>
+  <NavBar />
+  </div>
+  
+  <div>
     <Pokedex />
+  </div>
   </MuiThemeProvider>
 );
 
