@@ -5,6 +5,7 @@ import MyAwesomeReactComponent from './components/MyAwesomeReactComponent';
 
 // components
 import Pokedex from './components/pokedex';
+import NavBar from './components/NavBar'
 
 
 const App = () => (
